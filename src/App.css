@@ -1,0 +1,107 @@
+body{
+  font-family: "lato", "arial";
+  overflow-x: hidden;
+}
+.github {
+  animation: space 2s infinite;
+  text-transform: uppercase;
+  font-family: 'arial';
+  font-size: 20px;
+}
+@keyframes space {
+  0%{letter-spacing: 0;}
+  25%{letter-spacing: 0.5px;}
+}
+.sidebar{
+  width: 100%;
+  position: relative
+}
+.input {
+  background: #eee;
+  border: none
+}
+.input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: rgba(238, 238, 238, 1);
+}
+.sidebar::before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 1px solid #eee;
+  /* background-color: red; */
+  border-bottom: 0;
+  border-right: 0;
+  top: -10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: rotate(45deg);
+}
+form::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 46px;
+  position: absolute;
+  background-color: #fff;
+
+  transform: rotate(45deg);
+  border-bottom: 0;
+  border-right: 0;
+}
+
+/* footer styles */
+
+.root {
+  font-size: .9rem;
+  font-weight: 400;
+  color: #b4c4c8;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.root span {
+color: #F03A47;
+}
+
+.root a {
+font-weight: 600;
+color: #b4c4c8;
+}
+
+.root a:hover {
+text-decoration: underline;
+}
+
+
+@media (min-width: 0px) and (max-width: 639px) {
+  .box2 {
+    display: none;
+  }
+  .mobile {
+    display: contents;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1280px) {
+  .mobile {
+    display: none;
+  }
+  .box {
+    width: 70%
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .box {
+    width: 90%
+  }
+}
